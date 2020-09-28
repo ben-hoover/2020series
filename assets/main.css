@@ -1,0 +1,68 @@
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 280vw;
+  padding-right: calc((100vw - (60vh / 0.75)) / 2.0);
+}
+
+.stack {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: -webkit-sticky;
+	left: calc((100vw - (60vh / 0.75)) / 2.0);
+  position: sticky;
+  width: auto;
+}
+
+.base {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    width: auto;
+    height: 60vh;
+    z-index: -2;
+
+}
+
+.mid {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    width: auto;
+    height: 60vh;
+    z-index: 0;
+    margin-top: 60vh;
+}
+
+.top {
+	position: -webkit-sticky;
+    position: sticky;
+    top: 20%;
+    width: auto;
+    height: 60vh;
+    z-index: -50;
+}
+
+.above {
+  height: 400vh; 
+  z-index: -20; 
+  background-color: white
+}
+
+.below {
+  margin-top: -60vh; height: 250vh; 
+}
+
+.rear {
+	z-index: -100;
+}
